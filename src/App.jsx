@@ -1,23 +1,27 @@
-import './App.scss';
-import { Button, TextField } from '@material-ui/core';
-import {AppBar, Toolbar, Typography} from '@material-ui/core';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import "./App.scss";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Home } from "./Pages/Home/Home";
+import { Navbar } from "./Components/Navbar/Navbar";
+import { Footer } from "./Components/Footer/Footer";
+import { Portfolio } from "./Pages/Portfolio/Portfolio";
+import { About } from "./Pages/About/About";
+import { Contact } from "./Pages/Contact/Contact";
 
 
 function App() {
   return (
-    <div className="App">
-     <AppBar position='static'>
-         <Toolbar>
-             <Typography>React Navbar Example</Typography>
-         </Toolbar>
-      </AppBar>
-      <div style={{padding:"20px"}}>
-      <AccountCircle/>
-      </div>
-        <Button  color="primary" variant="contained"> Pulsa</Button> 
-        <TextField id="name" label="Name" variant="outlined" />
-    </div>
+    <>
+      <Router>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio/>}/>
+          <Route path="/portfolio" element={<About/>}/>
+          <Route path="/portfolio" element={<Contact/>}/>
+        </Routes>
+        <Footer/>
+      </Router>
+    </>
   );
 }
 
