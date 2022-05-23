@@ -1,0 +1,99 @@
+.contactCard {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 80px;
+
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;        
+
+    iframe {
+      width: 90%;
+      padding: 10px;
+      height: 600px;
+      border: none;
+      scroll-behavior: none;
+      margin: 0;
+    }
+  }
+
+  .formContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      align-items: center;
+      padding-bottom:  0;
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      background-color: #00d1c9;
+      background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+
+    .contactForm{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 10px;
+        align-items: center;
+        margin: 0 20px 17px 20px;
+        background-color: rgb(179, 179, 179);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;        
+        border-radius: 20px;
+        transition: 0.9s;
+    }
+    .contactForm:hover{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 10px;
+        align-items: center;
+        margin: 0 20px 17px 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+
+    }
+    .contactTitle{
+        padding: 17px;
+        text-align:initial;
+        
+    }
+    .inputText{
+        margin-bottom: 10px;
+        z-index: 0;
+   
+    }
+    .btnForm{
+        background-color: #1c1f25;
+        color:cadetblue;
+        border: none;
+        width: 78px;
+        margin: 5px;
+        font-size: 12px;
+        
+    }
+    .btnForm:hover{
+        background-color: #00d1c9;
+        color: #16161a;
+        border: none;
+       
+    }
+
+  }
+}
+@media screen and (min-width: 280px) and (max-width:768px ) {
+    .contactCard {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        margin: 80px;
+    }
+
+}
